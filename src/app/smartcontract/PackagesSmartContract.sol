@@ -51,7 +51,7 @@ contract NFT721 is ERC721URIStorage, Ownable {
 
         mint(msg.sender, tokenURI, imageURI);
 
-        payable(recipient).transfer(msg.value - 1);
+        payable(recipient).transfer(msg.value);
     }
 
     function getAllVouchers() public view returns (VouchersStruct[] memory) {
