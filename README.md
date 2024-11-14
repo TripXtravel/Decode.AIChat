@@ -1,6 +1,6 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Inspirational Dynamic Packaging with Generative AI: Powered by Camino Network
 
-## How It Works – The Traveler’s Journey
+### How It Works – The Traveler’s Journey
 
 Step 1: Initial Interaction
 -	The traveler starts a conversation with generative AI bot.
@@ -16,7 +16,7 @@ Step 3: Booking and Confirmation
 
 ![image](https://github.com/user-attachments/assets/517c917b-9f2d-426e-a035-3f3ae8612af4)
 
-## Repo information
+### Repo information
 
 -	https://github.com/TripXtravel/Decode.AIChat, the booking UI powered by AI, website to get/collect the information for the trip, departure airport, destination country, region, city, or city break with sunny weather etc, family or single, what products to include like insurance, car rental, transfer, activities and so on. The main goal is to offer packages tailor made for the customer needs and wishes. To get all the information we are integrated with AI API using it as a chat bot and to convert customer answers into search criteria. The Smart Contract can be found in the folder.
 -	https://github.com/TripXtravel/Decode.PackagesApi.Combinator, developed as a Supply bot (new subtype Combinator (named by Sam 😊)) connected with Camino Messenger API. We managed to integrate with CM API (hosted a bot locally) to get Accommodation data, and for other products, because of the lack of test data, we developed our own internal mock services. This is a prototype service that later can transform/evolve into a new service for Packages in Camino Messenger.
