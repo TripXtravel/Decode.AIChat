@@ -7,8 +7,6 @@ export default function useOffers() {
   const [offers, setOffers] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
-  console.log(params, "PARAMS");
-
   useEffect(() => {
     const fetchOffers = async () => {
       try {
