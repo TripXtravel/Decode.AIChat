@@ -8,7 +8,6 @@ export async function parseStringToObj(inputString) {
   while ((match = regex.exec(inputString)) !== null) {
     wordsAfterColon.push(match[1].trim());
   }
-  console.log(wordsAfterColon, "WORD");
 
   if (wordsAfterColon.length === 0) {
     return;
