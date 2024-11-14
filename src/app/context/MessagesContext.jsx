@@ -38,7 +38,6 @@ export const MessageProvider = ({ children }) => {
       setMessages((prev) => [...prev, assistant]);
 
       const obj = await parseStringToObj(assistant.content);
-      console.log(obj, "OBJS");
 
       setParams(obj);
     } catch (error) {

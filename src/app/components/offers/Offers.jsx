@@ -213,19 +213,21 @@ const dataTEst = {
   ],
 };
 
-export default function Offers({ data, isLoading }) {
-  const { flights, hotels, packages } = data;
-
-  console.log(data, "DATA");
-
-  if (packages === null || flights === null || hotels === null) {
+export default function Offers({ data }) {
+  if (
+    Object.keys(data).length === 0 ||
+    data.hotels === null ||
+    data.flights === null ||
+    data.packages === null
+  ) {
     return (
       <div className="text-lg flex w-[100%] h-[100vh] justify-center items-center">
         No offers found
       </div>
     );
   }
-  console.log(data, "DATA");
+
+  const { flights, hotels, packages } = data;
 
   // Create a map of hotels by their id
   const hotelMap = new Map(hotels.map((hotel) => [hotel.id, hotel]));

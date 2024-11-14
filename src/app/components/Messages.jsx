@@ -15,8 +15,6 @@ export default function Messages() {
     }
   }, [messages]); // Scroll to the bottom whenever the messages change
 
-  console.log(params, "PARAMS");
-
   return (
     <div className="w-[100%] p-4 h-[500px] flex flex-col justify-end overflow-auto bg-gradient-to-r from-purple-100 to-blue-300 rounded-tr-[16px] rounded-tl-[16px]">
       <div

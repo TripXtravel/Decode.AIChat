@@ -16,7 +16,7 @@ const WalletContext = createContext();
 
 export const useWallet = () => useContext(WalletContext);
 
-const contractAddress = "0x55E1E16F10A3701FBC6EBbc952DdAAe4f5F8840c";
+const contractAddress = "0xe4562F31E1253dC248Bb7655BAfEEDa1CF78D812";
 
 // Custom hook to use the WalletProvider
 export const WalletProvider = ({ children }) => {

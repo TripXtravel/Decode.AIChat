@@ -15,7 +15,6 @@ export default function Flight({ flight }) {
             departureTime,
           } = leg;
 
-          console.log(leg, "LEG");
           return (
             <div
               key={index}

@@ -4,7 +4,7 @@ import { useMessages } from "../context/MessagesContext";
 
 export default function useOffers() {
   const { params } = useMessages();
-  const [offers, setOffers] = useState([]);
+  const [offers, setOffers] = useState({});
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -21,12 +21,17 @@ export default function useOffers() {
             body: JSON.stringify({ SearchParameters: params }),
           }
         );
+
         console.log(response, "RESPONSE");
 
         const data = await response.json();
 
-        console.log(data, "DATA");
-        setOffers(data);
+        if (data.status !== 400) {
+          setOffers(data);
+        } else {
+          setOffers({});
+        }
+
         setIsLoading(false);
       } catch (error) {
         console.error("Error fetching offers:", error);

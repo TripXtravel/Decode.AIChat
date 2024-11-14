@@ -14,7 +14,6 @@ export async function parseStringToObj(inputString) {
     return;
   }
 
-  console.log("2024/01/15 - 2024/01/20".split(" to "), "WORD");
   return {
     Departure: wordsAfterColon[0],
     Destination: wordsAfterColon[1],
