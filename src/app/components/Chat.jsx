@@ -21,7 +21,7 @@ export default function Chat() {
       <div className="mt-auto w-full flex gap-4 flex-row border-t border-gray-300 relative rounded-b-[16px] shadow-inner shadow-[inset_0px_2px_6px_rgba(0,0,0,0.5)]">
         <input
           type="text"
-          className="w-[100%] h-[70px]  rounded-b-[16px] p-2"
+          className="w-[100%] h-[70px]  rounded-b-[16px] p-2 focus:outline-none focus:ring-0"
           value={input}
           onChange={(e) => setInput(e.target.value)}
         />
